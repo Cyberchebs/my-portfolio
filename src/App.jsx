@@ -1,0 +1,23 @@
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import Header from "./components/Header";
+import Skills from "./components/skills";
+import Projects from "./components/Projects";
+import Cta from "./components/Cta";
+
+function App() {
+  return (
+    <div className="flex justify-center">
+      <Navbar />
+      <div>
+        <Header />
+        <Skills />
+        <Projects />
+        <Cta />
+      </div>
+    </div>
+  );
+}
+
+export default App;
