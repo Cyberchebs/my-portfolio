@@ -9,6 +9,15 @@ const projects = [
     live: "https://chebstube.netlify.app/",
     tech: ["React |", "Material ui|", "  axios"],
   },
+  {
+    id: 2,
+    name: "freshf",
+    image: "/src/assets/fresffoods.png",
+    description: " An e-commerce store where you can buy fresh foods ",
+    github: "https://github.com/Cyberchebs/fresh_foods",
+    live: "https://freshf.netlify.app/",
+    tech: ["React |", "Typescript|", " tailwindcss"],
+  },
 ];
 
 export default projects;
