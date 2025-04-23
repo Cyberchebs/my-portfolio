@@ -12,6 +12,7 @@ function App() {
       <div>
         <Header />
         <Skills />
+        <p className="text-4xl">yvjukkmlkmlk</p>
         <Projects />
         <Cta />
       </div>
