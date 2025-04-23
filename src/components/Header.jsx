@@ -19,7 +19,7 @@ const Header = () => {
       <div className="flex flex-col gap-5 p-10 md:w-[50%] ">
         <h1 className="text-2xl text-left">
           Hi i'm <br />
-          <span className="md:text-6xl text-4xl gradient-text font font-medium typewriter">
+          <span className="md:text-5xl text-4xl gradient-text font font-medium typewriter">
             Chebem Nzom
           </span>
         </h1>
