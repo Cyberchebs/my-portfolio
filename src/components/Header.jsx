@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import profilePic from "/assets/chebem.jpg";
+import profilePic from "../assets/chebem.jpg";
 import { motion } from "motion/react";
 
 const Header = () => {
