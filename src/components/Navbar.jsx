@@ -24,7 +24,7 @@ const Navbar = () => {
           <a href="#contact_me">contact me</a>
         </li>
       </ul>
-      <div className="flex items-center space-x-4 text-xl">
+      <div className="flex items-center space-x-4 text-2xl">
         <a
           href="https://twitter.com/theNigeriandev"
           target="_blank"
