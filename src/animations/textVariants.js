@@ -25,7 +25,7 @@ export const boxVariants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.7,
     },
   },
 };
