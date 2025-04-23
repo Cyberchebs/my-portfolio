@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="flex flex-col items-center ">
       <Navbar />
-      <div className="w-full">
+      <div>
         <Header />
         <Skills />
         <Projects />
