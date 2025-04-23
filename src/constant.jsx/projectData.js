@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     name: "/youtube clone",
-    image: "/clonetube.png",
+    image: "./clonetube.png",
     description:
       "This is my YouTube clone project where you can watch youtube videos in real time intergration ",
     github: "https://github.com/Cyberchebs/youtube_clone",
@@ -12,7 +12,7 @@ const projects = [
   {
     id: 2,
     name: "freshf",
-    image: "/fresffoods.png",
+    image: "./fresffoods.png",
     description: " An e-commerce store where you can buy fresh foods ",
     github: "https://github.com/Cyberchebs/fresh_foods",
     live: "https://freshf.netlify.app/",
@@ -21,7 +21,7 @@ const projects = [
   {
     id: 2,
     name: "gerichtfoods",
-    image: "/restaurant.png",
+    image: "./restaurant.png",
     description:
       " A modern ui ux restaurant app  with stunning user interface ",
     github: "https://github.com/Cyberchebs/resturant_project",
