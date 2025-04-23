@@ -7,9 +7,9 @@ import Cta from "./components/Cta";
 
 function App() {
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col items-center">
       <Navbar />
-      <div>
+      <div className="w-full">
         <Header />
         <Skills />
         <Projects />

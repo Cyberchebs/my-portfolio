@@ -3,8 +3,14 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  display: flex;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .gradient-text {
