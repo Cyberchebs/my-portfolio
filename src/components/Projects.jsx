@@ -13,13 +13,13 @@ const Projects = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className="flex flex-wrap justify-center items-center mt-30 [perspective:1000px] "
+        className="flex flex-wrap justify-center md:gap-x-5 gap-y-5 items-center mt-30 [perspective:1000px] "
       >
         {projects.map(project => (
           <motion.div
             variants={cardVariants}
             key={project.id}
-            className=" relative p-10 w-[400px] h-[400px] bg-transparent backdrop-blur-md border border-white/20 rounded-lg hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
+            className="  p-10 w-[400px] h-[450px] bg-transparent backdrop-blur-md border border-white/20 rounded-lg hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
           >
             <div>
               <a target="_blank" href={project.live}>
@@ -35,7 +35,7 @@ const Projects = () => {
               <p>{project.description}</p>
               <span>{project.tech}</span>
               <a href={project.github}>
-                <button className=" p-2 absolute bottom-9 right-5 text-black bg-white rounded-2xl btnhover cursor-pointer">
+                <button className=" p-2  text-black bg-white rounded-2xl btnhover cursor-pointer">
                   source code
                 </button>
               </a>
