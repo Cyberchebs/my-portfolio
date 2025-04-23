@@ -22,7 +22,8 @@ const projects = [
     id: 2,
     name: "gerichtfoods",
     image: "/src/assets/restaurant.png",
-    description: " An e-commerce store where you can buy fresh foods ",
+    description:
+      " A modern ui ux restaurant app  with stunning user interface ",
     github: "https://github.com/Cyberchebs/resturant_project",
     live: "https://gerichtfoods.netlify.app",
     tech: ["React |", "Css "],
