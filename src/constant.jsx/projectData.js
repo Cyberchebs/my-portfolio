@@ -5,7 +5,7 @@ import restaurantImage from "../assets/restaurant.png";
 const projects = [
   {
     id: 1,
-    name: "/youtube clone",
+    name: "youtube clone",
     image: cloneTubeImage,
     description:
       "This is my YouTube clone project where you can watch youtube videos in real time intergration ",
