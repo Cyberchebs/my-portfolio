@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className="mt-30 lg:h-[80vh] p-5" id="myProjects">
       <h2 className="text-5xl">My Projects</h2>
-      <p className="text-4xl">yvjukkmlkmlk</p>
+
       <motion.div
         variants={boxVariants}
         initial="hidden"
