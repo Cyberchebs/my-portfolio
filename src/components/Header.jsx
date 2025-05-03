@@ -23,7 +23,7 @@ const Header = () => {
             Chebem Nzom
           </span>
         </h1>
-        <span className="text-left">
+        <span className="md:text-left">
           a Passionate frontend developer crafting clean, responsive, and
           user-friendly web interfaces. Skilled in turning ideas into
           interactive digital experiences using modern tools like React,

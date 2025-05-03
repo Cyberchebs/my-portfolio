@@ -15,7 +15,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "freshf",
+    name: "fresh foods",
     image: freshFoodsImage,
     description: " An e-commerce store where you can buy fresh foods ",
     github: "https://github.com/Cyberchebs/fresh_foods",
