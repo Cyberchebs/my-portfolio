@@ -50,9 +50,6 @@ const Cta = () => {
           </motion.div>
         </a>
       </div>
-      <h2 className="text-xl lg:text-3xl mt-3">
-        i really look forward to working <br /> with you
-      </h2>
     </section>
   );
 };
