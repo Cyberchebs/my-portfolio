@@ -27,8 +27,8 @@ const Header = () => {
           a professional frontend developer crafting clean, responsive, and
           user-friendly web interfaces. Skilled in turning ideas into
           interactive digital experiences using modern tools like React,
-          Typescript Tailwind, and JavaScript. Always learning, always building
-          new things.
+          Typescript Tailwind, and JavaScript. Always learning and building new
+          things.
         </span>
       </div>
     </section>
