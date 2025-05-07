@@ -51,3 +51,7 @@
   animation: typing 2s steps(12), blink 0.9s step-end infinite;
   width: fit-content;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  /* iPhone SE (2nd generation) specific styles */
+}

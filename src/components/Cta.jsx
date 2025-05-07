@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const Cta = () => {
   return (
-    <section id="contact_me" className="h-[80vh] mt-40">
+    <section id="contact_me" className="h-[100vh] mt-40">
       <h2 className="text-5xl ">Contact-me</h2>
       <div className="flex flex-col md:flex-col lg:flex-row justify-evenly mt-40 items-center p-5 gap-7 overflow-x-hidden">
         <a href="mailto:chebemnzomblack@gmail.com">
@@ -13,7 +13,8 @@ const Cta = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.3 }}
-            className=" p-5 flex flex-row border-5 border-red-600  items-center gap-3 bg-amber-50 text-black rounded-2xl text-2xl hover:shadow-lg hover:shadow-white transition-all duration-300"
+            className=" p-5 flex flex-row border-5 border-red-600 
+             items-center gap-3 bg-amber-50 text-black rounded-2xl text-2xl hover:shadow-lg hover:shadow-white transition-all duration-300"
           >
             <span>contact me on gmail</span>
             <FaArrowRightLong className="text-2xl" />
@@ -49,6 +50,9 @@ const Cta = () => {
           </motion.div>
         </a>
       </div>
+      <h2 className="text-xl lg:text-3xl mt-3">
+        i really look forward to working <br /> with you
+      </h2>
     </section>
   );
 };
