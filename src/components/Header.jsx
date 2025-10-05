@@ -17,14 +17,14 @@ const Header = () => {
         />
       </motion.div>
       <div className="flex flex-col gap-5 p-10 md:w-[50%] ">
-        <h1 className="text-2xl text-left">
+        <h1 className="text-2xl lg:text-left xs:text-center">
           Hi i'm <br />
           <span className="md:text-5xl text-4xl text-white font font-medium typewriter">
             Chebem Nzom
           </span>
         </h1>
         <span className="md:text-left">
-          a professional frontend developer crafting clean, responsive, and
+          an experienced frontend developer crafting clean, responsive, and
           user-friendly web interfaces. Skilled in turning ideas into
           interactive digital experiences using modern tools like React,
           Typescript Tailwind, and JavaScript. Always learning and building new

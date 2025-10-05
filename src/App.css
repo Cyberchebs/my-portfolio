@@ -6,6 +6,13 @@
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .gradient-text {
   background: linear-gradient(
     90deg,

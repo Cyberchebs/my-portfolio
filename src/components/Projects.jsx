@@ -26,14 +26,14 @@ const Projects = () => {
               <a target="_blank" href={project.live}>
                 <img
                   src={project.image}
-                  className=" h-[150px] object-contain"
+                  className=" h-[150px] object-contain rounded-xl"
                   alt=""
                 />
               </a>
             </div>
             <div className="text-left flex flex-col gap-y-3">
               <span className="py-3 text-2xl">{project.name}</span>
-              <p>{project.description}</p>
+              <p className="text-gray-300">{project.description}</p>
               <span>{project.tech}</span>
               <a href={project.github}>
                 <button className=" p-2  text-black bg-white rounded-2xl btnhover cursor-pointer">
