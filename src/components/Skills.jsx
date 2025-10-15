@@ -6,14 +6,14 @@ import { itemVariants } from "../animations/textVariants";
 
 const Skills = () => {
   return (
-    <div className="mt-30 lg:h-[80vh] " id="mySkills">
-      <h2 className="text-5xl">My Skills</h2>
+    <div className="mt-30 lg:h-auto " id="mySkills">
+      <h2 className="text-5xl">My tools</h2>
       <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className="flex flex-wrap items-center justify-center gap-10 mt-40"
+        className="flex flex-wrap p-10 gap-6 items-center py-20 justify-center"
       >
         {cSkill.map(skill => (
           <motion.div key={skill.id} variants={itemVariants}>

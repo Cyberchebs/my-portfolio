@@ -31,8 +31,12 @@ body::-webkit-scrollbar {
 
 .btnhover:hover {
   background: black;
-  border: 2px #ffff;
+  border: 2px solid white;
   color: white;
+}
+
+.btnhover {
+  transition: all 0.3s ease;
 }
 
 @keyframes typing {
