@@ -10,8 +10,8 @@ const projects = [
     image: shot1,
     description:
       "A sass application where you can pitch and share startup project ideas",
-    github: "https://github.com/Cyberchebs/youtube_clone",
-    live: "https://chebstube.netlify.app/",
+    github: "https://github.com/Cyberchebs/ky_directory",
+    live: "https://ky-directory.vercel.app/",
     tech: ["NextJs |", "tailwindcss|", "  sanity"],
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     image: shot2,
     description: "slick Landing page for a video-editing ai application",
     github: "https://github.com/Cyberchebs/youtube_clone",
-    live: "https://chebstube.netlify.app/",
+    live: "https://xenos-ai-landing-page.vercel.app/",
     tech: ["React |", "Tailwindcss"],
   },
   {
