@@ -35,18 +35,18 @@ const Header = () => {
           alt="profile-picture"
         />
       </motion.div>
-      <div className="flex flex-col  gap-5 p-10 md:w-[50%] ">
-        <h1 className="text-2xl text-left xs:text-center">
-          <span className="flex items-center gap-2">
+      <div className="flex flex-col gap-5 p-10 md:w-[50%] ">
+        <h1 className="text-2xl text-left max-[743px]:text-center">
+          <span className="flex items-center gap-2 ">
             {icon}
             {greeting}, I'm
           </span>
           <br />
-          <span className="md:text-5xl text-4xl text-white font font-medium typewriter">
+          <span className="md:text-5xl  text-4xl  text-white font font-medium typewriter">
             Chebem Nzom
           </span>
         </h1>
-        <span className="text-left">
+        <span className="text-left max-[743px]:text-center">
           an experienced frontend developer crafting clean, responsive, and
           user-friendly web interfaces. Skilled in turning ideas into
           interactive digital experiences using modern tools like React,
