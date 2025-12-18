@@ -1,7 +1,7 @@
 import cloneTubeImage from "../assets/clonetube.png";
-import freshFoodsImage from "../assets/fresffoods.png";
 import shot1 from "../assets/shot1.png";
 import shot2 from "../assets/shot2.png";
+import shot3 from "../assets/shot3.png";
 
 const projects = [
   {
@@ -9,7 +9,7 @@ const projects = [
     name: "ky-directory",
     image: shot1,
     description:
-      "A sass application where you can pitch and share startup project ideas",
+      "A sass application where you can pitch and share tech startup and project ideas so you can connect wih investors and entrepreneurs",
     github: "https://github.com/Cyberchebs/ky_directory",
     live: "https://ky-directory.vercel.app/",
     tech: ["NextJs |", "tailwindcss|", "  sanity"],
@@ -18,7 +18,7 @@ const projects = [
     id: 2,
     name: "Xora ai",
     image: shot2,
-    description: "slick Landing page for a video-editing ai application",
+    description: "smooth and user-friendly Landing page for a video-editing ai application ",
     github: "https://github.com/Cyberchebs/youtube_clone",
     live: "https://xenos-ai-landing-page.vercel.app/",
     tech: ["React |", "Tailwindcss"],
@@ -35,12 +35,12 @@ const projects = [
   },
   {
     id: 4,
-    name: "fresh foods",
-    image: freshFoodsImage,
-    description: " An e-commerce store where you can buy fresh foods ",
-    github: "https://github.com/Cyberchebs/fresh_foods",
-    live: "https://freshf.netlify.app/",
-    tech: ["React |", "Typescript|", " tailwindcss"],
+    name: "chebems pc store",
+    image: shot3,
+    description: " An e-commerce store where you can buy rigs and computer parts ",
+    github: "https://github.com/Cyberchebs/e-commercial",
+    live: "https://e-commercial-six.vercel.app/",
+    tech: ["NextJs |", " sanity |", "  stripe"],
   },
 ];
 
