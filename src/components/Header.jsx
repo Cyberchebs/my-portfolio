@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import profilePic from "../assets/chebem.jpg";
+import  fineboy from "../assets/fineboy.png";
 import { motion } from "motion/react";
 import { WiDaySunny, WiSunset, WiNightClear } from "react-icons/wi";
 
@@ -28,32 +29,17 @@ const Header = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
+        className="relative"
       >
         <img
-          src={profilePic}
-          className="w-[300px] rounded-6xl"
+          src={fineboy}
+          className="w-[400px] h-[550px] rounded-6xl"
           alt="profile-picture"
         />
+        <div className="absolute w-[200px] h-[150px] border-2 border-b-amber-50 top-[20%] left-[50%] right-[-50%] translate-x-[50%]"></div>
       </motion.div>
-      <div className="flex flex-col gap-5 p-10 md:w-[50%] ">
-        <h1 className="text-2xl text-left max-[743px]:text-center">
-          <span className="flex items-center gap-2 ">
-            {icon}
-            {greeting}, I'm
-          </span>
-          <br />
-          <span className="md:text-5xl  text-4xl  text-white font font-medium typewriter">
-            Chebem Nzom
-          </span>
-        </h1>
-        <span className="text-left max-[743px]:text-center">
-          an experienced frontend developer crafting clean, responsive, and
-          user-friendly web interfaces. Skilled in turning ideas into
-          interactive digital experiences using modern tools like React,
-          Typescript Tailwind, and JavaScript. Always learning and building new
-          things.
-        </span>
-      </div>
+      
+      
     </section>
   );
 };
