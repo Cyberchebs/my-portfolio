@@ -47,7 +47,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import Lines from "../assets/Lines.gif";
 import fineboy from "../assets/fineboy.png";
-import { headerAnimations } from "../animations/headerAnimations";
+import { headerAnimations } from "../animations/headeranimations.js";
 
 const Header = () => {
   const boxControls = useAnimation();
