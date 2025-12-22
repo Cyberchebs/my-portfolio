@@ -115,18 +115,18 @@ const Header = () => {
   return (
     <section 
       ref={ref}
-      className="flex min-h-[80vh] flex-row md:flex-row md:justify-evenly mt-30 items-center"
+      className="flex min-h-[80vh] flex-row md:flex-row md:justify-evenly mt-30 items-center max-md:mr-60"
     >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative"
+        className="relative "
       >
       
         <motion.img
           src={fineboy}
-          className="w-[400px] h-[550px] max-md:w-[300px] max-md:h-[400px] rounded-6xl"
+          className="w-[400px] h-[550px] max-md:w-[400px] max-md:h-[400px] rounded-6xl "
           alt="profile-picture"
           {...headerAnimations.profileImage}
           animate={isInView ? headerAnimations.profileImage.animate : headerAnimations.profileImage.initial}
@@ -136,7 +136,7 @@ const Header = () => {
         <motion.div 
           initial={headerAnimations.infoBox.initial}
           animate={boxControls}
-          className="absolute border-2 border-amber-50 top-[20%] left-[50%] right-[-50%] max-md:right-[-10%] max-md:translate-x-[10%] translate-x-[50%] text-left bg-black text-[12px] flex flex-col start-2p justify-between"
+          className="absolute border-2 border-amber-50 top-[20%] left-[50%] right-[-50%] max-md:right-[-10%] max-md:translate-x-[10%] translate-x-[50%] text-left bg-black max-md:text-[10px] text-[12px] flex flex-col start-2p justify-between"
         >
           {showText && (
             <>
