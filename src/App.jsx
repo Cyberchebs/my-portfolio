@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Cta from "./components/Cta";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
         <Projects />
         <Cta />
       </div>
-      <Footer />
+      
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import projects from "../constant.jsx/projectData";
 import { motion } from "motion/react";
 import { boxVariants } from "../animations/textVariants";
@@ -7,7 +6,7 @@ import { FaGithub } from "react-icons/fa6";
 
 const Projects = () => {
   return (
-    <section className="mt-30 lg:h-auto p-5" id="myProjects">
+    <section className="mt-30 lg:h-auto w-full p-5" id="myProjects">
       <h2 className="text-5xl">My Projects</h2>
 
       <motion.div

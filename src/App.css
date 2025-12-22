@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 #root {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  overflow-x: hidden;
 }
+
 
 html {
   scroll-behavior: smooth;
 }
-body::-webkit-scrollbar {
-  display: none;
+
+
+
+.start-2p {
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
 }
+
+
 
 .gradient-text {
   background: linear-gradient(

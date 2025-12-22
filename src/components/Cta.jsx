@@ -1,12 +1,24 @@
-import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "motion/react";
 
+
 const Cta = () => {
   return (
-    <section id="contact_me" className="h-auto lg:h-[100vh] mt-40">
+        <section id="contact_me" className=" lg:h-[100vh] mt-40 w-full">
       <h2 className="text-5xl ">Contact-me</h2>
-      <div className="flex flex-col md:flex-col lg:flex-row justify-evenly lg:mt-40 mt-20 items-center p-5 gap-7 overflow-x-hidden">
+      <p className="mt-5">Let take the first to getting the job done,I work across different time zones</p>
+      <div className="flex flex-col lg:flex-row mt-15 ">
+        <div className="w-[50%] h-auto flex items-center justify-end ">
+            <video 
+              loop 
+              muted 
+              autoPlay
+              playsInline 
+              className="h-auto w-full block"
+              src="/AdobeStock_133145383.mp4"
+            /> 
+        </div>
+      <div className="lg:ml-10 flex flex-col md:flex-col lg:flex-col gap-10 justify-center items-center p-5 w-auto  overflow-x-hidden">
         <a href="mailto:chebemnzomblack@gmail.com">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -20,13 +32,12 @@ const Cta = () => {
             <FaArrowRightLong className="text-2xl" />
             <img
               src="https://www.svgrepo.com/show/349378/gmail.svg"
-              className="w-[150px] h-[100px] lg:w-[200px] lg:h-[150px] self-start"
+              className="w-[100px] h-[50px] lg:w-[100px] lg:h-[50px] self-start"
               alt=""
             />
           </motion.div>
         </a>
 
-        <span className="text-5xl">OR</span>
 
         <a
           href="https://wa.me/2348136044960"
@@ -40,17 +51,20 @@ const Cta = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="p-5 flex flex-row items-center gap-3 border-5 border-white hover:text-white bg-green-400 text-black rounded-2xl text-2xl hover:shadow-lg hover:shadow-green-600 transition-all duration-300"
           >
-            <span>Message me on WhatsApp</span>
+            <span>Message me on </span>
             <FaArrowRightLong className="text-2xl" />
             <img
               src="https://www.svgrepo.com/show/452133/whatsapp.svg"
-              className=" w-[150px] h-[100px]  lg:w-[200px] lg:h-[150px] self-start"
+              className=" w-[150px] h-[100px]  lg:w-[100px] lg:h-[50px] self-start"
               alt="WhatsApp logo"
             />
           </motion.div>
         </a>
       </div>
+      </div>
+     
     </section>
+     
   );
 };
 export default Cta;
