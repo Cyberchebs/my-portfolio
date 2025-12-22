@@ -6,8 +6,8 @@ const Cta = () => {
   return (
         <section id="contact_me" className=" lg:h-[100vh] mt-40 w-full">
       <h2 className="text-5xl ">Contact-me</h2>
-      <p className="mt-5">Let take the first to getting the job done,I work across different time zones</p>
-      <div className="flex flex-col lg:flex-row mt-15 ">
+      <p className="mt-5">Let take the first to getting the job done<br/>I work across all time zones</p>
+      <div className="flex flex-col lg:flex-row mt-15 items-center ">
         <div className="w-[50%] h-auto flex items-center justify-end ">
             <video 
               loop 
@@ -32,7 +32,7 @@ const Cta = () => {
             <FaArrowRightLong className="text-2xl" />
             <img
               src="https://www.svgrepo.com/show/349378/gmail.svg"
-              className="w-[100px] h-[50px] lg:w-[100px] lg:h-[50px] self-start"
+              className="w-[150px] h-[100px] lg:w-[100px] lg:h-[50px] self-start"
               alt=""
             />
           </motion.div>
