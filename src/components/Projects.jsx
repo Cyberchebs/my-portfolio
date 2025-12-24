@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { boxVariants } from "../animations/textVariants";
 import { cardVariants } from "../animations/textVariants";
 import { FaGithub } from "react-icons/fa6";
-import Dither from "../animations/dither";
+import Dither from "../animations/Dither";
 const Projects = () => {
   return (
     <section className="mt-30 lg:h-auto w-full  relative" id="myProjects">

@@ -10,7 +10,7 @@ const Header = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
   const [animationComplete, setAnimationComplete] = useState(false);
-   const [showDecrypt, setShowDecrypt] = useState(false); // Add this
+   const [showDecrypt, setShowDecrypt] = useState(false); 
   
   
   useEffect(() => {
