@@ -1,4 +1,3 @@
-import React from "react";
 import cSkill from "../constant.jsx/skillData";
 import { motion } from "motion/react";
 import { containerVariants } from "../animations/textVariants";
@@ -8,6 +7,7 @@ const Skills = () => {
   return (
     <div className="mt-30 lg:h-auto " id="mySkills">
       <h2 className="text-5xl">My tools</h2>
+      <p className="mt-5 start-2p relative z-10">My main tech stacks</p>
       <motion.div
         variants={containerVariants}
         initial="hidden"

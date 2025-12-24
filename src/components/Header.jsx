@@ -1,90 +1,18 @@
-// import Lines from '../assets/Lines.gif';
-// import  fineboy from "../assets/fineboy.png";
-// import { motion } from "motion/react";
-
-
-
-// const Header = () => {
- 
-    
-
-//   return (
-//     <section className="flex min-h-[80vh] flex-col md:flex-row md:justify-evenly mt-30 items-center">
-//       <motion.div
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ duration: 1 }}
-//         className="relative"
-//       >
-//         <img
-//           src={fineboy}
-//           className="w-[400px] h-[550px] rounded-6xl"
-//           alt="profile-picture"
-//         />
-//         <div className="absolute w-[300px] h-[100px] border-2 border-b-amber-50 top-[20%] left-[50%] right-[-50%] translate-x-[50%] text-left bg-black text-[12px] start-2p p-2 flex flex-col justify-between">
-//            <p>name: Chebem Nzom</p> 
-//            <p>role: Frontend web dev</p>
-//            <p>location: lagos,Nigeria</p>
-//            <p>sex : Male</p>
-//         </div>
-
-//         <div className="absolute w-[200px] h-[150px] border-2 border-b-amber-50 top-[80%] left-[40%] right-[-50%] translate-x-[50%]">
-//             <img src={Lines} className='h-[150px]' alt="" />
-//         </div>
-        
-        
-//       </motion.div>
-      
-      
-//     </section>
-//   );
-// };
-
-// export default Header;
-
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { useTypewriter } from "react-simple-typewriter";
 import Lines from "../assets/Lines.gif";
 import fineboy from "../assets/fineboy.png";
 import { headerAnimations } from "../animations/headeranimations.js";
+import DecryptedText from "../animations/decrypt.jsx";
 
 const Header = () => {
   const boxControls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
-  const [showText, setShowText] = useState(false);
   const [animationComplete, setAnimationComplete] = useState(false);
-  const [showName, setShowName] = useState(false);
-  const [showRole, setShowRole] = useState(false);
-  const [showLocation, setShowLocation] = useState(false);
-  const [showGender, setShowGender] = useState(false);
-
+   const [showDecrypt, setShowDecrypt] = useState(false); // Add this
   
-  const [nameText] = useTypewriter({
-    words: ['name : Chebem Nzom'],
-    loop: 1,
-    typeSpeed: 20,
-  });
-
-  const [roleText] = useTypewriter({
-    words: ['role : Frontend web dev'],
-    loop: 1,
-    typeSpeed: 20,
-  });
-
-  const [locationText] = useTypewriter({
-    words: ['location :lagos,Nigeria'],
-    loop: 1,
-    typeSpeed: 20,
-  });
-
-  const [genderText] = useTypewriter({
-    words: ['sex : Male'],
-    loop: 1,
-    typeSpeed: 20,
-  });
-
+  
   useEffect(() => {
     if (!isInView || animationComplete) return;
 
@@ -96,16 +24,9 @@ const Header = () => {
       
       
       await boxControls.start(headerAnimations.infoBox.expanded);
-      
-      
-      setShowText(true);
-      
-      
-      setTimeout(() => setShowName(true), 0);
-      setTimeout(() => setShowRole(true), 900);
-      setTimeout(() => setShowLocation(true), 2100);
-      setTimeout(() => setShowGender(true), 3500);
-      
+     await new Promise(resolve => setTimeout(resolve, 600)); 
+
+      setShowDecrypt(true);
       setAnimationComplete(true);
     };
     
@@ -138,14 +59,57 @@ const Header = () => {
           animate={boxControls}
           className="absolute border-2 border-amber-50 top-[20%] left-[50%] right-[-50%] max-md:right-[-10%] max-md:translate-x-[10%] translate-x-[50%] text-left bg-black max-md:text-[10px] text-[12px] flex flex-col start-2p justify-between"
         >
-          {showText && (
-            <>
-              {showName && <p className="text-white">{nameText}</p>}
-              {showRole && <p className="text-white">{roleText}</p>}
-              {showLocation && <p className="text-white">{locationText}</p>}
-              {showGender && <p className="text-white">{genderText}</p>}
-            </>
-          )}
+        {showDecrypt && (
+       <>
+       <p>
+        name :
+         <DecryptedText
+          text="Chebem Nzom"
+          animateOn="view"
+          revealDirection="center"
+          sequential={true}
+          speed={200}
+          delay={5000}
+          maxIterations={200}
+        />
+       </p>
+       <p>
+        role :
+         <DecryptedText
+          text="Frontend web dev"
+          animateOn="view"
+          revealDirection="center"
+          sequential={true}
+          maxIterations={300}
+        />
+       </p>
+       <p>
+        sex :
+         <DecryptedText
+          text="Male"
+          animateOn="view"
+          revealDirection="center"
+          sequential={true}
+          maxIterations={400}
+          speed={150}
+          delay={4000}
+        />
+       </p>
+       <p>
+        Location:
+         <DecryptedText
+          text="Lagos,Nigeria"
+          animateOn="view"
+          revealDirection="center"
+          sequential={true}
+          speed={150}
+          maxIterations={25}
+          delay={2000}
+        />
+       </p>
+       
+        </>
+        )}
         </motion.div>
 
       
@@ -158,9 +122,10 @@ const Header = () => {
         </motion.div>
       </motion.div>
       <div className="">
-        <h1  className="text-6xl max-md:text-4xl font-bold max-md:hidden text-white ml-10">
-          lets fix or build your<br/>
-           product together
+        <h1  className="text-4xl max-md:text-4xl lg:mt-10 font-bold max-md:hidden text-white ml-10">
+          lets fix, build or improve
+          <br/>your
+           product 
         </h1>
       </div>
     </section>

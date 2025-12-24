@@ -6,15 +6,15 @@ const Cta = () => {
   return (
         <section id="contact_me" className=" lg:h-[100vh] mt-40 w-full">
       <h2 className="text-5xl ">Contact-me</h2>
-      <p className="mt-5">Let take the first to getting the job done<br/>I work across all time zones</p>
+      <p className="mt-5 start-2p">Let take the first step to getting the job done<br/>I work across all time zones</p>
       <div className="flex flex-col lg:flex-row mt-15 items-center ">
-        <div className="w-[50%] h-auto flex items-center justify-end ">
+        <div className="w-[50%] max-md:w-full h-auto flex items-center justify-end ">
             <video 
               loop 
               muted 
               autoPlay
               playsInline 
-              className="h-auto w-full block"
+              className="h-auto w-full block max-md:h-[200px]"
               src="/AdobeStock_133145383.mp4"
             /> 
         </div>
