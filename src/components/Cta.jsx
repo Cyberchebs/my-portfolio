@@ -1,12 +1,13 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "motion/react";
+import Footer from "./Footer";
 
 
 const Cta = () => {
   return (
-        <section id="contact_me" className=" lg:h-[100vh] mt-40 w-full">
+        <section id="contact_me" className=" lg:h-[100vh] mt-40 w-full text-center">
       <h2 className="text-5xl ">Contact-me</h2>
-      <p className="mt-5 start-2p">Let take the first step to getting the job done<br/>I work across all time zones</p>
+      <p className="mt-5 start-2p max-md:text-xs max-md:px-4 ">Let take a step to getting the job done,<br/>I work across all time zones</p>
       <div className="flex flex-col lg:flex-row mt-15 items-center ">
         <div className="w-[50%] max-md:w-full h-auto flex items-center justify-end ">
             <video 
@@ -63,6 +64,7 @@ const Cta = () => {
       </div>
       </div>
      
+     <Footer/>
     </section>
      
   );

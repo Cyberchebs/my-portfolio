@@ -35,16 +35,6 @@ const cSkill = [
     icon: "https://www.svgrepo.com/show/452210/git.svg",
   },
   {
-    id: 8,
-    name: "Vite",
-    icon: "https://www.svgrepo.com/show/374167/vite.svg",
-  },
-  {
-    id: 9,
-    name: "Vitest",
-    icon: "https://www.svgrepo.com/show/374167/vite.svg",
-  },
-  {
     id: 10,
     name: "Tailwind CSS",
     icon: "https://www.svgrepo.com/show/374118/tailwind.svg",
@@ -63,11 +53,6 @@ const cSkill = [
     id: 13,
     name: "Chakra UI",
     icon: "https://img.icons8.com/?size=100&id=r9QJ0VFFrn7T&format=png&color=000000",
-  },
-  {
-    id: 14,
-    name: "CI/CD",
-    icon: "https://icon.icepanel.io/Technology/svg/GitHub-Actions.svg",
   },
   {
     id: 15,

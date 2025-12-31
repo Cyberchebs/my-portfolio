@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <section 
       ref={ref}
-      className="flex min-h-[80vh] flex-row md:flex-row md:justify-evenly mt-30 items-center max-md:mr-60"
+      className="flex min-h-[80vh] flex-row md:flex-row md:justify-evenly mt-30 items-center max-md:mr-40"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -114,18 +114,16 @@ const Header = () => {
 
       
         <motion.div 
-          className="absolute w-[150px] h-[100px] border-2 border-b-amber-50 top-[80%] left-[40%] right-[-50%] translate-x-[50%]"
+          className="absolute w-[150px] h-[100px] max-md:w-[80px]  border-2 border-b-amber-50 top-[80%] left-[40%] right-[-50%] translate-x-[50%]"
           {...headerAnimations.linesGif}
           animate={isInView ? headerAnimations.linesGif.animate : headerAnimations.linesGif.initial}
         >
-          <img src={Lines} className="h-[150px] " alt="" />
+          <img src={Lines} className="h-[150px] max-md:h-[80px] " alt="" />
         </motion.div>
       </motion.div>
       <div className="">
         <h1  className="text-4xl max-md:text-4xl lg:mt-10 font-bold max-md:hidden text-white ml-10">
-          lets fix, build or improve
-          <br/>your
-           product 
+         Building interfaces. Breaking boundaries.<br/> Shipping fast.
         </h1>
       </div>
     </section>

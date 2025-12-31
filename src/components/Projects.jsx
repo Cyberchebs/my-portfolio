@@ -21,7 +21,7 @@ const Projects = () => {
         </div>
         <div className="mt-10">
           <h2 className="text-5xl z-10 relative">My projects</h2>
-          <p className="mt-5 start-2p relative z-10">here are my gallery of websites</p>
+          <p className="mt-5 start-2p relative z-10">here are my gallery of web products</p>
         </div> 
       <motion.div
         variants={boxVariants}
