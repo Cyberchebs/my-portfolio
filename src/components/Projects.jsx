@@ -2,7 +2,7 @@ import projects from "../constant.jsx/projectData";
 import { motion } from "motion/react";
 import { boxVariants } from "../animations/textVariants";
 import { cardVariants } from "../animations/textVariants";
-import { FaGithub } from "react-icons/fa6";
+import { FaArrowRight, FaGithub } from "react-icons/fa6";
 import Dither from "../animations/Dither";
 const Projects = () => {
   return (
@@ -21,7 +21,7 @@ const Projects = () => {
         </div>
         <div className="mt-10">
           <h2 className="text-5xl z-10 relative">My projects</h2>
-          <p className="mt-5 start-2p relative z-10">here are my gallery of web products</p>
+          <p className="mt-5 start-2p text-xs relative z-10">here are my gallery of web products</p>
         </div> 
       <motion.div
         variants={boxVariants}
@@ -34,7 +34,7 @@ const Projects = () => {
           <motion.div
             variants={cardVariants}
             key={project.id}
-            className="  p-8 w-[400px] h-[400px] max-md:w-[350px] flex flex-col bg-transparent backdrop-blur-md border border-white/20 rounded-lg hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
+            className="  p-8 w-[400px] h-[450px] max-md:w-[350px] flex flex-col bg-transparent backdrop-blur-md border border-white/20 rounded-lg hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
           >
             <div>
               <a target="_blank" href={project.live}>
@@ -46,15 +46,24 @@ const Projects = () => {
               </a>
             </div>
             <div className="text-left flex  flex-1 flex-col justify-between gap-y-1 ">
-              <span className="py-3 text-2xl max-md:text-xl m-0">{project.name}</span>
+              <span className="py-2 text-2xl max-md:text-xl  ">{project.name}</span>
               <p className="text-gray-300 max-md:text-xs ">{project.description}</p>
               <span>{project.tech}</span>
-              <a href={project.github}>
+              <div className="flex flex-row gap-5 ">
+                <a href={project.github}>
                 <button className="group p-2 text-black  bg-white rounded-2xl btnhover cursor-pointer flex items-center gap-2">
                   source code{" "}
                   <FaGithub className="  text-black group-hover:text-amber-50 text-2xl cursor-pointer transition-colors" />
                 </button>
               </a>
+                <a href={project.live}>
+                <button className="group p-2 text-black  bg-white rounded-2xl btnhover cursor-pointer flex items-center gap-2">
+                  live demo
+                  <FaArrowRight className="  text-black group-hover:text-amber-50 text-2xl cursor-pointer transition-colors" />
+                </button>
+              </a>
+              </div>
+              
             </div>
           </motion.div>
         ))}
