@@ -15,13 +15,13 @@ const Navbar = () => {
       </div>
       <ul className="space-x-6 text-sm font-medium hidden md:flex">
         <li className=" cursor-pointer">
-          <a href="#mySkills"> my skills</a>
+          <a href="#mySkills"> My skills</a>
         </li>
         <li className=" cursor-pointer">
-          <a href="#myProjects">projects</a>
+          <a href="#myProjects">Projects</a>
         </li>
         <li className="transition cursor-pointer">
-          <a href="#contact_me">contact me</a>
+          <a href="#contact_me">Contact me</a>
         </li>
       </ul>
       <div className="flex items-center space-x-4 text-2xl">
