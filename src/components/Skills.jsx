@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <div className="mt-30 lg:h-auto " id="mySkills">
       <h2 className="text-5xl">My tools</h2>
-      <p className="mt-5 start-2p text-xs relative z-10">My main tech stacks</p>
+      <p className="mt-5 start-2p text-xs md:text-xl relative z-10">My main tech stacks</p>
       <motion.div
         variants={containerVariants}
         initial="hidden"

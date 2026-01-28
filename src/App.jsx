@@ -7,17 +7,23 @@ import Cta from "./components/Cta";
 
 function App() {
   return (
-    <div className="flex gap-0 flex-col items-center ">
-      <Navbar />
-      <div className="flex gap-0 flex-col items-center ">
-        <Header />
-        <Skills />
-        <Projects />
-        <Cta />
-      </div>
-      
-    </div>
-  );
+   <div className="flex gap-0 flex-col items-center">
+  <Navbar />
+  <div className="  w-full scroll-smooth ">
+      <Header />
+    
+    
+      <Skills />
+    
+    
+      <Projects />
+  
+
+      <Cta />
+  
+  </div>
+</div>
+  )
 }
 
 export default App;

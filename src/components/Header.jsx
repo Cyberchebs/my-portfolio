@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Lines from "../assets/Lines.gif";
 import fineboy from "../assets/fineboy.png";
 import { headerAnimations } from "../animations/headeranimations.js";
+import useAge from "../hooks/useage.js";
 import DecryptedText from "../animations/decrypt.jsx";
 
 const Header = () => {
@@ -11,6 +12,7 @@ const Header = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
   const [animationComplete, setAnimationComplete] = useState(false);
    const [showDecrypt, setShowDecrypt] = useState(false); 
+   const age = useAge('2002-10-5');
   
   
   useEffect(() => {
@@ -84,9 +86,9 @@ const Header = () => {
         />
        </p>
        <p>
-        sex :
+        age :
          <DecryptedText
-          text="Male"
+          text={String(age)}
           animateOn="view"
           revealDirection="center"
           sequential={true}
