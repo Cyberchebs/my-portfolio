@@ -126,9 +126,9 @@ const Header = () => {
 
         
              <p 
-          className="text-left pl-5 pt-20 text-[15px] lg:w-[30%] max-md:w-full md:w-[40%] font-bold text-amber-50 mb-4">
+          className="text-left pl-5 pt-30 text-[12px] start-2p lg:w-[30%] max-md:w-full md:w-[40%] font-bold text-amber-50 mb-4">
            I'm a frontend web developer that builds visually appealing and user friendly websites.i bring desings to life throught code and  ideas to reality by building industry standard scalable web functionalities that bring value to users.
-          lets work together build your next project
+          lets work together build your next project :-)
 
           </p>
         
