@@ -36,9 +36,9 @@ const Header = () => {
   }, [boxControls, isInView, animationComplete]);
 
   return (
-    <section 
+    <section
       ref={ref}
-      className="flex min-h-[80vh] flex-row md:flex-row md:justify-evenly mt-30 items-center max-md:mr-40"
+      className="flex min-h-[80vh] max-md:h-[70vh] lg:flex-row max-md:flex-col md:justify-evenly mt-30 items-center max-md:mr-40"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -123,12 +123,21 @@ const Header = () => {
           <img src={Lines} className="h-[150px] max-md:h-[80px] " alt="" />
         </motion.div>
       </motion.div>
-      <div className="">
-        <h1  className="text-4xl max-md:text-4xl lg:mt-10 font-bold max-md:hidden text-white ml-10">
-         Building interfaces. Breaking boundaries.<br/> Shipping fast.
-        </h1>
-      </div>
+
+        
+             <p 
+          className="text-left pl-5 pt-20 text-[15px] lg:w-[30%] max-md:w-full md:w-[40%] font-bold text-amber-50 mb-4">
+           I'm a frontend web developer that builds visually appealing and user friendly websites.i bring desings to life throught code and  ideas to reality by building industry standard scalable web functionalities that bring value to users.
+          lets work together build your next project
+
+          </p>
+        
+       
+     
     </section>
+
+  
+    
   );
 };
 

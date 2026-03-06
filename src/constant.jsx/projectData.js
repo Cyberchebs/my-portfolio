@@ -2,6 +2,8 @@ import cloneTubeImage from "../assets/clonetube.png";
 import shot1 from "../assets/shot1.png";
 import shot2 from "../assets/shot2.png";
 import shot3 from "../assets/shot3.png";
+import bankShot from "../assets/bankshot.png";
+
 
 const projects = [
   {
@@ -16,6 +18,16 @@ const projects = [
   },
   {
     id: 2,
+    name: "banking page",
+    image: bankShot,
+    description: "A bank page with a 3d atm card for a fintech company that provides banking solutions to businesses",
+    github: "https://github.com/Cyberchebs/3dbank",
+    live: "https://3dbank-n6zy.vercel.app/",
+    tech: ["React |", " Tailwindcss |", " ThreeJs ", "| shadcn ui" ],
+    
+  },
+  {
+    id: 3,
     name: "Xora ai",
     image: shot2,
     description: "smooth and user-friendly Landing page for a video-editing ai application ",
@@ -24,7 +36,7 @@ const projects = [
     tech: ["React |", " Tailwindcss"],
   },
   {
-    id: 3,
+    id: 4,
     name: "youtube clone",
     image: cloneTubeImage,
     description:
@@ -34,10 +46,10 @@ const projects = [
     tech: ["React |", " Material ui |", " Axios"],
   },
   {
-    id: 4,
+    id: 5,
     name: "chebems pc store",
     image: shot3,
-    description: " An e-commerce store where you can buy rigs and computer parts ",
+    description: " An e-commerce store where you can buy rigs and computer parts,supporting payment intergration and real time inventory management",
     github: "https://github.com/Cyberchebs/e-commercial",
     live: "https://e-commercial-six.vercel.app/",
     tech: ["NextJs |", " Sanity cms |", "  Stripe"],
