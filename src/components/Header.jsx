@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Lines from "../assets/Lines.gif";
 import fineboy from "../assets/fineboy.png";
 import { headerAnimations } from "../animations/headeranimations.js";
-import useAge from "../hooks/useage.js";
+import useAge from "../hooks/useAge.js";
 import DecryptedText from "../animations/decrypt.jsx";
 
 const Header = () => {
