@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <section
       ref={ref}
-      className="flex min-h-[80vh] max-md:h-[70vh] lg:flex-row max-md:flex-col md:justify-evenly mt-30 items-center max-md:mr-40"
+      className="flex min-h-[80vh] lg:flex-row max-md:flex-col md:justify-evenly mt-30 items-center max-md:mr-40"
     >
       <motion.div
         initial={{ opacity: 0 }}
