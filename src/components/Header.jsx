@@ -86,18 +86,6 @@ const Header = () => {
         />
        </p>
        <p>
-        age :
-         <DecryptedText
-          text={String(age)}
-          animateOn="view"
-          revealDirection="center"
-          sequential={true}
-          maxIterations={400}
-          speed={150}
-          delay={4000}
-        />
-       </p>
-       <p>
         Location:
          <DecryptedText
           text="Lagos,Nigeria"
