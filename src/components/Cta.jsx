@@ -40,7 +40,7 @@ const Cta = () => {
         </a>
 
 
-        <a
+        {/* <a
           href="https://wa.me/2348136044960"
           target="_blank"
           rel="noopener noreferrer"
@@ -60,7 +60,7 @@ const Cta = () => {
               alt="WhatsApp logo"
             />
           </motion.div>
-        </a>
+        </a> */}
       </div>
       </div>
      

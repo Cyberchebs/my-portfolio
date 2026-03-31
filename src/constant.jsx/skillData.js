@@ -51,8 +51,8 @@ const cSkill = [
   },
   {
     id: 13,
-    name: "Chakra UI",
-    icon: "https://img.icons8.com/?size=100&id=r9QJ0VFFrn7T&format=png&color=000000",
+    name: "ThreeJS",
+    icon: "https://canada1.discourse-cdn.com/flex035/uploads/threejs/optimized/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751_2_1016x1024.png",
   },
   {
     id: 15,
@@ -61,8 +61,8 @@ const cSkill = [
   },
   {
     id: 16,
-    name: "Webpack",
-    icon: "https://www.svgrepo.com/show/354552/webpack.svg",
+    name: "Gsap",
+    icon: "https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256",
   },
   {
     id: 17,
