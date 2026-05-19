@@ -40,7 +40,7 @@ const projects = [
     id: 4,
     name: "Shopify pc parts store",
     image: shot3,
-    description: " An e-commerce store where you can buy rigs and computer parts,supporting payment intergration and real time inventory management",
+    description: " A shopify store where you can buy rigs and computer parts,supporting payment intergration and real time inventory management",
     github: "https://github.com/Cyberchebs/e-commercial",
     live: "https://e-commercial-six.vercel.app/",
     tech: ["NextJs |", " Sanity cms |", "  Stripe"],
