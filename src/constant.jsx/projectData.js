@@ -47,12 +47,12 @@ const projects = [
   },
    {
     id: 5,
-    name: "Xora ai",
+    name: "forme",
     image: shot2,
-    description: "smooth and user-friendly Landing page for a video-editing ai application ",
-    github: "https://github.com/Cyberchebs/youtube_clone",
-    live: "https://xenos-ai-landing-page.vercel.app/",
-    tech: ["React |", " Tailwindcss"],
+    description: "A 3d bike store site where you can view customize and buy bikes with a 3d immersive experience using react-three-fiber and gsap for animations",
+    github: "https://github.com/Cyberchebs/bike-store_site",
+    live: "https://bike-store-site-y1p6.vercel.app/",
+    tech: ["React |", " Tailwindcss |", " react-three-fiber |", " react-three-drei |", " GSAP"],
   },
 ];
 
